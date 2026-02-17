@@ -13,7 +13,7 @@ export default function LoginPage() {
       setLoading(true);
       const { error } = await supabase.auth.signInWithOAuth({
         provider: "google",
-       
+        
       });
       if (error) throw error;
     } catch (error: any) {
@@ -112,7 +112,7 @@ export default function LoginPage() {
           </p>
         </div>
 
-        Floating Background Hint
+
         <p className="text-center text-slate-600 text-[10px] mt-6 tracking-[0.2em] uppercase">
           Powered by Supabase & Next.js
         </p>
